@@ -1,6 +1,6 @@
 <?php
 require_once 'config/database.php';
-class BlooddonorModal{
+class docgia{
     private $madg;
     private $name;
     private $gioitinh;
@@ -22,7 +22,7 @@ class BlooddonorModal{
     public function insert($param = []) {
         $connection = $this->connectDb();
         //tạo và thực thi truy vấn
-        $queryInsert = "INSERT INTO docgia (madg, hovaten, gioitinh, namsinh, nghenghiep, ngaycapthe, ngayhethan, diachi)
+        $queryInsert = "INSERT INTO docgia ( hovaten, gioitinh, namsinh, nghenghiep, ngaycapthe, ngayhethan, diachi)
 
         VALUES ('{$param['hovaten']}', '{$param['gioitinh']}', '{$param['namsinh']}', '{$param['nghenghiep']}', '{$param['ngaycapthe']}', '{$param['ngayhethan']}', '{$param['diachi']}')";
         $isInsert = mysqli_query($connection, $queryInsert);
@@ -57,7 +57,7 @@ class BlooddonorModal{
     public function update($dg = []) {
         $connection = $this->connectDb();
         $queryUpdate = "UPDATE docgia 
-        SET hovaten = '{$dg['hocvaten']}', gioitinh = '{$dg['gioitinh']}', namsinh = '{$dg['namsinh']}', nghenghiep = '{$dg['nghenghiep']}', ngaycapthe = '{$dg['ngaycapthe']}', ngayhethan = '{$dg['ngayhethan']}', diachi = '{$dg['diachi']}'  WHERE madg = {$dg['madg']}";
+        SET hovaten = '{$dg['hovaten']}', gioitinh = '{$dg['gioitinh']}', namsinh = '{$dg['namsinh']}', nghenghiep = '{$dg['nghenghiep']}', ngaycapthe = '{$dg['ngaycapthe']}', ngayhethan = '{$dg['ngayhethan']}', diachi = '{$dg['diachi']}'  WHERE madg = {$dg['madg']}";
         $isUpdate = mysqli_query($connection, $queryUpdate);
         $this->closeDb($connection);
 

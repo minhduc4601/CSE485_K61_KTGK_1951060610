@@ -36,9 +36,9 @@ require_once 'view/commons/message.php';
                         <?php
                         foreach ($docgias as $dg) {
                             $urlEdit =
-                            "index.php?controller=docgia&action=edit&bdid=" . $dg['madg'];
+                            "index.php?controller=docgia&action=edit&madg=" . $dg['madg'];
                             $urlDelete =
-                            "index.php?controller=docgiar&action=delete&bdid=" . $dg['madg'];
+                            "index.php?controller=docgia&action=delete&madg=" . $dg['madg'];
                         ?>
                             <tr>
                             <th scope="row"><?php echo $dg['madg'] ?></th>

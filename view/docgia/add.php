@@ -14,16 +14,10 @@ require 'view/header.php'
                         <label for="validationCustom01" class="form-label">Tên Độc giả</label>
                         <input type="text" class="form-control" name="hovaten" id="validationCustom01" value="" required>
                     </div>
-                    <div>
-                        <span class="me-3">Giới tính</span>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gioitinh" id="inlineRadio1" value="Nam">
-                            <label class="form-check-label" for="inlineRadio1">Nam</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gioitinh" id="inlineRadio2" value="Nữ">
-                            <label class="form-check-label" for="inlineRadio2">Nữ</label>
-                        </div>
+                    <div class="col-md-12">
+                        <label for="validationCustom01" class="form-label">Giới Tính</label>
+                        <input type="text" class="form-control" name="gioitinh" id="validationCustom01" value="" required>
+                    
                     </div>
                     <div class="col-md-6">
                         <label for="validationCustom02" class="form-label">Năm sinh</label>
@@ -39,7 +33,7 @@ require 'view/header.php'
                     </div>
                     <div class="col-md-6">
                         <label for="validationCustom02" class="form-label">Ngày hết hạn</label>
-                        <input type="date" class="form-control" name="nagyhethan" id="validationCustom02" value="" required>
+                        <input type="date" class="form-control" name="ngayhethan" id="validationCustom02" value="" required>
                     </div>
                     <div class="col-md-6">
                         <label for="validationCustom02" class="form-label">Địa chỉ</label>
